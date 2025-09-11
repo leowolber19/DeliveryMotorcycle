@@ -189,7 +189,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/Motorcycles/Delete/{id}": {
       "delete": {
         "tags": [
           "Motorcycles"
@@ -296,11 +298,11 @@
       }
     },
     "/Rental/{id}/Return": {
-      "post": {
+      "put": {
         "tags": [
           "Rental"
         ],
-        "summary": "Realizar a locação de uma moto",
+        "summary": "Informar a data de devolução e calcular o valor da locação",
         "parameters": [
           {
             "name": "id",

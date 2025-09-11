@@ -109,7 +109,7 @@ namespace DeliveryMotorcycle.API.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         [SwaggerOperation(Summary = "Excluir motos existentes por id")]
         public IActionResult DeleteById(Guid id)
         {

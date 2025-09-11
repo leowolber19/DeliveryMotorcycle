@@ -6,6 +6,8 @@ using DeliveryMotorcycle.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Numerics;
 using System.Text;
@@ -117,7 +119,7 @@ namespace DeliveryMotorcycle.Infrastructure.Repository
                 _dbContext.Rentals.Update(rent);
                 _dbContext.SaveChanges();
 
-                return new ReturnViewModel(true, "Success saving return date!");
+                return new ReturnViewModel(true, "Success saving return date! Value rental: " + totalValue.ToString("C", new CultureInfo("pt-BR")));
             }
             catch (Exception e)
             {

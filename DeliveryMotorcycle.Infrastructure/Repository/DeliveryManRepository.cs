@@ -29,10 +29,16 @@ namespace DeliveryMotorcycle.Infrastructure.Repository
                     return new ReturnViewModel(false, "Error to create delivery man: There is already a delivery person registered for this user!");
 
                 if (GetByCnh(man.CnhNumber) != null)
-                    return new ReturnViewModel(false, "Error to create delivery man: cnh already exists registered!");
+                    return new ReturnViewModel(false, "Error to create delivery man: driver's license already exists registered!");
 
                 if (GetByCnpj(man.Cnpj) != null)
                     return new ReturnViewModel(false, "Error to create delivery man: cnpj already exists registered!");
+
+                if (Regex.Replace(man.Cnpj, @"\D", "").Length > 14)
+                    return new ReturnViewModel(false, "Error to create delivery man: cnpj invalid!");
+
+                if (Regex.Replace(man.CnhNumber, @"\D", "").Length > 11)
+                    return new ReturnViewModel(false, "Error to create delivery man: driver's license invalid!");
 
                 var deliveryMan = new DeliveryMan()
                 {
@@ -51,7 +57,7 @@ namespace DeliveryMotorcycle.Infrastructure.Repository
             }
             catch (Exception e)
             {
-                return new ReturnViewModel(false, "Error to create delivery man: " + e.Message);
+                return new ReturnViewModel(false, "Error to create delivery man: " + e.Message + ". " + e?.InnerException?.Message);
             }
         }
 

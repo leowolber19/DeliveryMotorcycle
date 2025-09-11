@@ -52,7 +52,7 @@ namespace DeliveryMotorcycle.Infrastructure.Repository
 
         public Motorcycle? GetMotorcycleByPlate(string plate)
         {
-            return _dbContext.Motorcycle.FirstOrDefault(f => f.Plate == plate && !f.Excluded);
+            return _dbContext.Motorcycle.FirstOrDefault(f => f.Plate.ToUpper() == plate.ToUpper() && !f.Excluded);
         }
 
         public Motorcycle? GetMotorcycleAvailable()

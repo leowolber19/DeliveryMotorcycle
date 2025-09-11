@@ -128,14 +128,16 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
 
+    var context = services.GetRequiredService<DeliveryMotorcycleDbContext>();
+
+    context.Database.Migrate();
+
     await DeliveryMotorcycle.Domain.Base.Roles.Initialize(services);
 }
 
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<DeliveryMotorcycleDbContext>();
-
-    context.Database.Migrate();
 
     if (!context.Plans.Any())
     {

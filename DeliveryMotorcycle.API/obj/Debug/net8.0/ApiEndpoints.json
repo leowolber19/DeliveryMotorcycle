@@ -49,22 +49,6 @@
   },
   {
     "ContainingType": "DeliveryMotorcycle.API.Controllers.MotorcyclesController",
-    "Method": "DeleteById",
-    "RelativePath": "Motorcycles/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "DeliveryMotorcycle.API.Controllers.MotorcyclesController",
     "Method": "Create",
     "RelativePath": "Motorcycles/Create",
     "HttpMethod": "POST",
@@ -74,6 +58,22 @@
       {
         "Name": "motorcycle",
         "Type": "DeliveryMotorcycle.Application.ViewModel.MotorcycleViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.MotorcyclesController",
+    "Method": "DeleteById",
+    "RelativePath": "Motorcycles/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -146,7 +146,7 @@
     "ContainingType": "DeliveryMotorcycle.API.Controllers.RentalController",
     "Method": "Return",
     "RelativePath": "Rental/{id}/Return",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [

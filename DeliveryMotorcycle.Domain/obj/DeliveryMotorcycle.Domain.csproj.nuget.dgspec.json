@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repo\\DeliveryMotorcycle\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\DeliveryMotorcycle.Domain.csproj": {}
+    "C:\\Repo\\Mottu\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\DeliveryMotorcycle.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Repo\\DeliveryMotorcycle\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\DeliveryMotorcycle.Domain.csproj": {
+    "C:\\Repo\\Mottu\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\DeliveryMotorcycle.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\DeliveryMotorcycle\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\DeliveryMotorcycle.Domain.csproj",
+        "projectUniqueName": "C:\\Repo\\Mottu\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\DeliveryMotorcycle.Domain.csproj",
         "projectName": "DeliveryMotorcycle.Domain",
-        "projectPath": "C:\\Repo\\DeliveryMotorcycle\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\DeliveryMotorcycle.Domain.csproj",
+        "projectPath": "C:\\Repo\\Mottu\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\DeliveryMotorcycle.Domain.csproj",
         "packagesPath": "C:\\Users\\leonardo.wolber\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\DeliveryMotorcycle\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\obj\\",
+        "outputPath": "C:\\Repo\\Mottu\\DeliveryMotorcycle\\DeliveryMotorcycle.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

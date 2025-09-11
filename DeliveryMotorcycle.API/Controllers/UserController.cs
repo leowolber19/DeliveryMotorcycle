@@ -40,7 +40,11 @@ public class UserController : ControllerBase
 
             await _userManager.AddToRoleAsync(user, role);
 
-            return Ok("User registered!");
+            return Ok(new
+            {
+                Success = true,
+                Message = "User registered!"
+            });
         }
         catch (Exception e)
         {
