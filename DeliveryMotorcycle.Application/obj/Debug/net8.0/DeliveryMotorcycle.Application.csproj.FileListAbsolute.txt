@@ -1,0 +1,15 @@
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\bin\Debug\net8.0\DeliveryMotorcycle.Application.deps.json
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\bin\Debug\net8.0\DeliveryMotorcycle.Application.dll
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\bin\Debug\net8.0\DeliveryMotorcycle.Application.pdb
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\bin\Debug\net8.0\DeliveryMotorcycle.Domain.dll
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\bin\Debug\net8.0\DeliveryMotorcycle.Domain.pdb
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\DeliveryMotorcycle.Application.csproj.AssemblyReference.cache
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\DeliveryMotorcycle.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\DeliveryMotorcycle.Application.AssemblyInfoInputs.cache
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\DeliveryMotorcycle.Application.AssemblyInfo.cs
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\DeliveryMotorcycle.Application.csproj.CoreCompileInputs.cache
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\Delivery.C2E9971E.Up2Date
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\DeliveryMotorcycle.Application.dll
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\refint\DeliveryMotorcycle.Application.dll
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\DeliveryMotorcycle.Application.pdb
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Application\obj\Debug\net8.0\ref\DeliveryMotorcycle.Application.dll

@@ -1,0 +1,239 @@
+[
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.DeliveryManController",
+    "Method": "Create",
+    "RelativePath": "DeliveryMan/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "man",
+        "Type": "DeliveryMotorcycle.Application.ViewModel.DeliveryManViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.DeliveryManController",
+    "Method": "UpdateCnh",
+    "RelativePath": "DeliveryMan/UpdateCnh",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.MotorcyclesController",
+    "Method": "GetById",
+    "RelativePath": "Motorcycles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.MotorcyclesController",
+    "Method": "DeleteById",
+    "RelativePath": "Motorcycles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.MotorcyclesController",
+    "Method": "Create",
+    "RelativePath": "Motorcycles/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "motorcycle",
+        "Type": "DeliveryMotorcycle.Application.ViewModel.MotorcycleViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.MotorcyclesController",
+    "Method": "EditMotorcycleByPlate",
+    "RelativePath": "Motorcycles/Edit/{id}/Plate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "DeliveryMotorcycle.Application.ViewModel.MotorcycleEditViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.MotorcyclesController",
+    "Method": "GetByPlate",
+    "RelativePath": "Motorcycles/GetByPlate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.NotificationsController",
+    "Method": "Get",
+    "RelativePath": "Notification/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.RentalController",
+    "Method": "GetById",
+    "RelativePath": "Rental/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.RentalController",
+    "Method": "Return",
+    "RelativePath": "Rental/{id}/Return",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "rental",
+        "Type": "DeliveryMotorcycle.Application.ViewModel.RentalReturnViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.RentalController",
+    "Method": "Create",
+    "RelativePath": "Rental/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rental",
+        "Type": "DeliveryMotorcycle.Application.ViewModel.RentalViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliveryMotorcycle.API.Controllers.RentalController",
+    "Method": "Plans",
+    "RelativePath": "Rental/Plans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "Login",
+    "RelativePath": "User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "Register",
+    "RelativePath": "User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

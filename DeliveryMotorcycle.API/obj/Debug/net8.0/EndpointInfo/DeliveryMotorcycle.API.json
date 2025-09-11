@@ -1,0 +1,533 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Delivery Motorcycle API",
+    "version": "v1"
+  },
+  "paths": {
+    "/DeliveryMan/Create": {
+      "post": {
+        "tags": [
+          "DeliveryMan"
+        ],
+        "summary": "Cadastrar um novo entregador",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeliveryManViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeliveryManViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeliveryManViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/DeliveryMan/UpdateCnh": {
+      "put": {
+        "tags": [
+          "DeliveryMan"
+        ],
+        "summary": "Atualizar a cnh do entregador",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Motorcycles/Create": {
+      "post": {
+        "tags": [
+          "Motorcycles"
+        ],
+        "summary": "Cadastrar uma nova moto",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MotorcycleViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MotorcycleViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MotorcycleViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Motorcycles/GetByPlate": {
+      "get": {
+        "tags": [
+          "Motorcycles"
+        ],
+        "summary": "Consultar uma moto filtrando pela placa",
+        "parameters": [
+          {
+            "name": "plate",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Motorcycles/Edit/{id}/Plate": {
+      "put": {
+        "tags": [
+          "Motorcycles"
+        ],
+        "summary": "Alterar a placa de uma moto",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MotorcycleEditViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MotorcycleEditViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MotorcycleEditViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Motorcycles/{id}": {
+      "get": {
+        "tags": [
+          "Motorcycles"
+        ],
+        "summary": "Consultar motos existentes por id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Motorcycles"
+        ],
+        "summary": "Excluir motos existentes por id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Notification/Get": {
+      "get": {
+        "tags": [
+          "Notifications"
+        ],
+        "summary": "Consultar todas as motos cadastradas com o ano de 2024",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Rental/Create": {
+      "post": {
+        "tags": [
+          "Rental"
+        ],
+        "summary": "Realizar a locação de uma moto",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RentalViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RentalViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RentalViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Rental/Plans": {
+      "get": {
+        "tags": [
+          "Rental"
+        ],
+        "summary": "Consultar os planos das locações",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Rental/{id}": {
+      "get": {
+        "tags": [
+          "Rental"
+        ],
+        "summary": "Consultar locações por id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Rental/{id}/Return": {
+      "post": {
+        "tags": [
+          "Rental"
+        ],
+        "summary": "Realizar a locação de uma moto",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RentalReturnViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RentalReturnViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RentalReturnViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/User/Register": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Cadastrar um novo usuário",
+        "parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "role",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/User/Login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Realizar login do usuário",
+        "parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DeliveryManViewModel": {
+        "required": [
+          "birthDate",
+          "cnhNumber",
+          "cnhType",
+          "cnpj",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cnpj": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cnhNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cnhType": {
+            "$ref": "#/components/schemas/TypeCnh"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MotorcycleEditViewModel": {
+        "required": [
+          "plate"
+        ],
+        "type": "object",
+        "properties": {
+          "plate": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MotorcycleViewModel": {
+        "required": [
+          "model",
+          "plate",
+          "year"
+        ],
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "model": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "plate": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RentalReturnViewModel": {
+        "required": [
+          "returnDate"
+        ],
+        "type": "object",
+        "properties": {
+          "returnDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RentalViewModel": {
+        "required": [
+          "days",
+          "expectedEndDate"
+        ],
+        "type": "object",
+        "properties": {
+          "days": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "expectedEndDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TypeCnh": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Bearer {token}",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

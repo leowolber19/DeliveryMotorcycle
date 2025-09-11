@@ -1,0 +1,12 @@
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\bin\Debug\net8.0\DeliveryMotorcycle.Domain.deps.json
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\bin\Debug\net8.0\DeliveryMotorcycle.Domain.dll
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\bin\Debug\net8.0\DeliveryMotorcycle.Domain.pdb
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\DeliveryMotorcycle.Domain.csproj.AssemblyReference.cache
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\DeliveryMotorcycle.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\DeliveryMotorcycle.Domain.AssemblyInfoInputs.cache
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\DeliveryMotorcycle.Domain.AssemblyInfo.cs
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\DeliveryMotorcycle.Domain.csproj.CoreCompileInputs.cache
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\DeliveryMotorcycle.Domain.dll
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\refint\DeliveryMotorcycle.Domain.dll
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\DeliveryMotorcycle.Domain.pdb
+C:\Repo\DeliveryMotorcycle\DeliveryMotorcycle\DeliveryMotorcycle.Domain\obj\Debug\net8.0\ref\DeliveryMotorcycle.Domain.dll
