@@ -32,5 +32,23 @@ namespace DeliveryMotorcycle.Domain.Entities
         public DateTime? ReturnDate { get; set; }
 
         public double? Value { get; set; }
+
+        public decimal CalcularMulta(DateTime returnDate)
+        {
+            if (returnDate < ExpectedEndDate)
+            {
+                var diasNaoUsados = (ExpectedEndDate - returnDate).Days;
+                var percentual = (decimal)(MotorcyclePlan.Percentage ?? 0);
+
+                return diasNaoUsados * MotorcyclePlan.Value * percentual;
+            }
+            else if (returnDate > ExpectedEndDate)
+            {
+                var diasExtras = (returnDate - ExpectedEndDate).Days;
+                return diasExtras * 50m;
+            }
+
+            return 0m;
+        }
     }
 }
